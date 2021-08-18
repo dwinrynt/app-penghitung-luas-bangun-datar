@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Pilihan Bangun Datar : Persegi, Persegi Panjang, Lingkaran, Segitiga")
+        var bangun = prompt("Masukan Bangun Datar")
+        if(bangun == "Persegi"){
+        function hitung(bangun) {
+        var s = prompt("Masukan Sisi");
+        var hasil = (s*s)
+        return hasil;
+        }
+        var nilai1 = bangun
+        document.write(hitung())
+        }
+
+        else if(bangun == "Persegi Panjang"){
+        function hitung(bangun) {
+        var p = prompt("masukan panjang")
+        var l = prompt("masukan lebar")
+        var hasil = (p*l)
+        return hasil;
+        }   
+        var nilai2 = bangun
+        document.write(hitung())
+        }
+
+        else if(bangun == "Lingkaran"){
+        function hitung(bangun) {
+        var phi = prompt("masukan phi")
+        var r = prompt("masukan jari-jari")
+        var hasil = (phi*r*r)
+        return hasil;   
+        }
+        var nilai3 = bangun
+        document.write(hitung())
+        }
+        
+        else if(bangun == "Segitiga"){
+        function hitung(bangun) {
+        var a = prompt("masukan alas")  
+        var t = prompt("masukan tinggi") 
+        var hasil = (1/2*a*t)
+        return hasil;
+        }
+        var nilai4 = bangun
+        document.write(hitung())
+       
+        }
+
+        else{
+        alert("Bangun tidak ditemukan")
+        }
+
+        
+        
+    </script>
+</body>
+</html>
